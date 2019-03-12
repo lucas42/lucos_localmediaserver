@@ -1,0 +1,21 @@
+{
+  "name": "lucos-localmediaserver",
+  "version": "0.0.0",
+  "description": "Serves local media files over http for local development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "lucos",
+    "music",
+    "media",
+    "development",
+    "offline"
+  ],
+  "author": "lucas42",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
