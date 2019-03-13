@@ -15,6 +15,6 @@ app.get('*', function(req, res, next){
 // This is really bad practice
 app.use(express.static('/'));
 
-app.listen(port, function () {
+app.listen(port, 'localhost', function () {
   console.log('App listening on port ' + port);
 });
