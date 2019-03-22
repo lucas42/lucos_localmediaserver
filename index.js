@@ -5,8 +5,8 @@ const port = process.env.PORT || 3000;
 // Hacky middleware to only expose files ending in .mp3
 app.get('*', function(req, res, next){
 	res.setHeader("Access-Control-Allow-Origin", "*");
-	if (!req.url.endsWith(".mp3")) {
-		res.status(404).send("Not an mp3");
+	if (!req.url.endsWith(".mp3") && !req.url.endsWith(".ogg")) {
+		res.status(404).send("Not a recognised audio file");
 		return;
 	}
 	next();
