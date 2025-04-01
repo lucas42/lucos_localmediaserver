@@ -16,6 +16,6 @@
   ],
   "author": "lucas42",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^5.1.0"
   }
 }
